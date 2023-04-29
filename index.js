@@ -11,6 +11,8 @@ let showPass = () => {
 };
 
 document.querySelector("#password-icon").addEventListener("click", showPass);
+document.querySelector("#copyrights").innerHTML =
+  "tkp &copy; " + new Date().getFullYear();
 document
   .querySelector("#email")
   .addEventListener("input", (e) => alert(e.target.value));
